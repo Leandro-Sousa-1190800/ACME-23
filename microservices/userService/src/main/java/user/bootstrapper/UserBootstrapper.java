@@ -7,7 +7,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import user.domain.Role;
 import user.domain.User;
-import user.infrastructure.UserRepository;
+import user.application.interfaces.repository.UserRepository;
 
 @Component
 @Profile("bootstrap")

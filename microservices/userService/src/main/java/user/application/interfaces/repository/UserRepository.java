@@ -1,4 +1,4 @@
-package user.infrastructure;
+package user.application.interfaces.repository;
 
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;

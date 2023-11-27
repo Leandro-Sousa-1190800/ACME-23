@@ -1,18 +1,16 @@
-package aggregatedRating;
+package review;
 
+import review.property.FileStorageProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import aggregatedRating.property.FileStorageProperties;
 
 @SpringBootApplication
 @EnableConfigurationProperties({
         FileStorageProperties.class
 })
-public class AggregatedRatingServiceApplication {
-
+public class ReviewServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AggregatedRatingServiceApplication.class, args);
+        SpringApplication.run(ReviewServiceApplication.class, args);
     }
-
 }

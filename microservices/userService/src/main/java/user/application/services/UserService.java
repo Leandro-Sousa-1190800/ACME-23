@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import user.application.dto.UserView;
 import user.application.mapping.UserViewMapper;
 import user.domain.User;
-import user.infrastructure.UserRepository;
+import user.application.interfaces.repository.UserRepository;
 
 import java.util.Optional;
 
