@@ -1,21 +1,15 @@
-package com.isep.acme.authentication;
+package user.controllers;
 
-import com.isep.acme.application.dto.UserView;
-import com.isep.acme.application.mapping.UserViewMapper;
-import com.isep.acme.authentication.AuthenticationRequest;
-import com.isep.acme.domain.User;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-
 import org.springframework.security.oauth2.jwt.JwtClaimsSet;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
@@ -23,6 +17,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import user.application.dto.UserView;
+import user.application.mapping.UserViewMapper;
+import user.domain.AuthenticationRequest;
+import user.domain.User;
 
 import javax.validation.Valid;
 import java.time.Instant;

@@ -106,14 +106,14 @@
 
 
 
-	
-   <dependency>
-     <groupId>org.springframework.security</groupId>
-     <artifactId>spring-security-core</artifactId>
-	<!-- <version>5.1.6.RELEASE</version> -->
-   </dependency>
 
- </dependencies>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<!-- <version>5.1.6.RELEASE</version> -->
+		</dependency>
+
+	</dependencies>
 
 	<build>
 		<plugins>
@@ -134,7 +134,7 @@
 				<configuration>
 					<compilerArgs>
 						<arg>-parameters</arg>
-					  </compilerArgs>
+					</compilerArgs>
 					<source>11</source>
 					<target>11</target>
 					<annotationProcessorPaths>

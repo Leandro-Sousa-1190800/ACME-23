@@ -1,8 +1,5 @@
 package com.isep.acme;
 
-import com.isep.acme.application.dto.UserView;
-import com.isep.acme.application.mapping.UserViewMapper;
-import com.isep.acme.domain.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -26,7 +23,7 @@ public class ACMEApplication {
 
 	@Bean
 	public HttpMessageConverter<BufferedImage> createImageHttpMessageConverter() {
-		return new BufferedImageHttpMessageConverter();
+ 		return new BufferedImageHttpMessageConverter();
 	}
 
 
